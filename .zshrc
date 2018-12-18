@@ -109,6 +109,7 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 
 alias cl="clear"
 alias yt-mp3="youtube-dl --extract-audio --audio-format mp3"
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 
