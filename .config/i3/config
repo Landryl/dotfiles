@@ -213,6 +213,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 exec xset -b
 
 # Fixing touchpad
+exec --no-startup-id "compton -b --config ~/.config/compton/compton.conf"
 exec xinput --set-prop ETPS/2\ Elantech\ Touchpad "libinput Natural Scrolling Enabled" 1
 exec xinput --set-prop ETPS/2\ Elantech\ Touchpad "libinput Tapping Enabled" 1
 
