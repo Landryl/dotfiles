@@ -189,10 +189,13 @@ bindsym $mod+p exec sh ~/.config/polybar/polybar_autohide.sh
 
 # Starting upon login
 exec compton -CGb --no-fading-openclose
-exec --no-startup-id i3-msg 'workspace 1:Terms; exec urxvt'
+#exec --no-startup-id i3-msg 'workspace 1:Terms; exec urxvt'
 
 # Starting polybar
-exec_always --no-startup-id ~/.config/polybar/launch.sh
+#exec_always --no-startup-id ~/.config/polybar/launch.sh
+
+# Starting conky
+exec_always --no-startup-id ~/.config/conky/launch.sh
 
 # Background
 exec_always --no-startup-id feh --bg-fill ~/Build/Backgrounds/synthwave2.jpg
