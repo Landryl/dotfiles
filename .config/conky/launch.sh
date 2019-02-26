@@ -6,5 +6,4 @@ killall -q conky
 # Wait until the processes have been shut down
 while pgrep -u $UID -x conky >/dev/null; do sleep 1; done
 
-# Launch bar1 and bar2
-conky -c ~/.config/conky/conky.conf
+conky -c ~/.config/config-themes/conkyhook.conf
