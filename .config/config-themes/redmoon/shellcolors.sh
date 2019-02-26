@@ -8,8 +8,8 @@ color18="19/19/1f" # Base 01
 color19="24/24/2b" # Base 02
 color08="32/2f/40" # Base 03 - Bright Black
 color20="3c/39/4d" # Base 04
-color07="fe/f8/ea" # Base 05 - White
-color21="fe/f8/ea" # Base 06
+color07="bb/bb/be" # Base 05 - White
+color21="bb/bb/be" # Base 06
 color15="fe/f8/ea" # Base 07 - Bright White
 
 color01="e3/56/4d" # Base 08 - Red
