@@ -104,8 +104,10 @@ source $ZSH/oh-my-zsh.sh
 export VISUAL="vim"
 
 eval "`dircolors ~/.config/dircolors`"
-BASE16_SHELL=$HOME/.config/base16-shell/
-[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+#BASE16_SHELL=$HOME/.config/base16-shell/
+#[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+
+bash ~/.config/config-themes/shellhook.sh
 
 alias cl="clear"
 alias yt-mp3="youtube-dl --extract-audio --audio-format mp3"
