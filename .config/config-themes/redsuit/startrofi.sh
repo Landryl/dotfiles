@@ -1,1 +1,1 @@
-rofi -show drun -yoffset 180
+rofi -show $1 -yoffset 180

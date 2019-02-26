@@ -1,1 +1,1 @@
-rofi -show drun
+rofi -show $1
