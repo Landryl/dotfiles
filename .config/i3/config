@@ -192,11 +192,12 @@ exec compton -CGb --no-fading-openclose
 # Starting polybar
 #exec_always --no-startup-id ~/.config/polybar/launch.sh
 
-# Starting conky
-exec_always --no-startup-id ~/.config/conky/launch.sh
 
 # Calling config-themes hook
 exec_always ~/.config/config-themes/i3hook.sh
+
+# Starting conky
+exec_always --no-startup-id ~/.config/conky/launch.sh
 
 # No borders
 new_window 1pixel
