@@ -4,29 +4,31 @@
 # Grayscale Dark scheme by Alexandre Gavioli (https://github.com/Alexx2/)
 
 color00="0f/0f/12" # Base 00 - Black
+color18="19/19/1f" # Base 01
+color19="24/24/2b" # Base 02
+color08="32/2f/40" # Base 03 - Bright Black
+color20="3c/39/4d" # Base 04
+color07="fe/f8/ea" # Base 05 - White
+color21="fe/f8/ea" # Base 06
+color15="fe/f8/ea" # Base 07 - Bright White
+
 color01="e3/56/4d" # Base 08 - Red
 color02="b2/d8/89" # Base 0B - Green
 color03="fe/cf/63" # Base 0A - Yellow
 color04="f1/79/6b" # Base 0D - Blue
 color05="b2/94/bb" # Base 0E - Magenta
 color06="75/75/9c" # Base 0C - Cyan
-color07="fe/f8/ea" # Base 05 - White
-color08="32/2f/40" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
 color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
-color15="fe/ef/ce" # Base 07 - Bright White
 color16="99/99/99" # Base 09
 color17="5e/5e/5e" # Base 0F
-color18="25/25/25" # Base 01
-color19="46/46/46" # Base 02
-color20="ab/ab/ab" # Base 04
-color21="e3/e3/e3" # Base 06
-color_foreground="b9/b9/b9" # Base 05
-color_background="10/10/10" # Base 00
+
+color_background=$color00 # Base 00
+color_foreground=$color07 # Base 05
 
 if [ -n "$TMUX" ]; then
   # Tell tmux to pass the escape sequences through
