@@ -7,7 +7,7 @@
     selected-normal-foreground:  rgba ( 255, 255, 255, 100 % );
     foreground:                  rgba ( 193, 193, 193, 100 % );
     normal-foreground:           @foreground;
-    alternate-normal-background: rgba ( 30, 30, 30, 100 % );
+    alternate-normal-background: rgba ( 26, 26, 26, 100 % );
     red:                         rgba ( 220, 50, 47, 100 % );
     selected-urgent-foreground:  rgba ( 255, 24, 68, 100 % );
     blue:                        rgba ( 38, 139, 210, 100 % );
@@ -17,15 +17,15 @@
     lightbg:                     rgba ( 238, 232, 213, 100 % );
     selected-active-foreground:  rgba ( 128, 203, 196, 100 % );
     alternate-active-background: rgba ( 39, 50, 56, 100 % );
-    background:                  rgba ( 30, 30, 30, 100 % );
-    bordercolor:                 rgba ( 30, 30, 30, 100 % );
+    background:                  rgba ( 26, 26, 26, 100 % );
+    bordercolor:                 rgba ( 30, 30, 30, 0 % );
     alternate-normal-foreground: @foreground;
-    normal-background:           rgba ( 30, 30, 30, 100 % );
+    normal-background:           rgba ( 26, 26, 26, 100 % );
     lightfg:                     rgba ( 88, 104, 117, 100 % );
-    selected-normal-background:  rgba ( 50, 50, 50, 100 % );
-    border-color:                @foreground;
+    selected-normal-background:  rgba ( 40, 40, 40, 100 % );
+    border-color:                rgba ( 80, 80, 80, 100% );
     spacing:                     2;
-    separatorcolor:              rgba ( 30, 37, 41, 100 % );
+    separatorcolor:              rgba ( 30, 30, 30, 0 % );
     urgent-background:           rgba ( 39, 39, 39, 100 % );
     selected-urgent-background:  rgba ( 57, 66, 73, 100 % );
     alternate-urgent-foreground: @urgent-foreground;
@@ -61,7 +61,7 @@
 }
 #element {
     border:  0;
-    padding: 1px ;
+    padding: 10px ;
 }
 #element.normal.normal {
     background-color: @normal-background;
@@ -100,9 +100,9 @@
     text-color:       @alternate-active-foreground;
 }
 #scrollbar {
-    width:        4px ;
+    width:        0px ;
     border:       0;
-    handle-width: 8px ;
+    handle-width: 0px ;
     padding:      0;
 }
 #sidebar {
@@ -116,7 +116,7 @@
 #inputbar {
     spacing:    0;
     text-color: @normal-foreground;
-    padding:    1px ;
+    padding:    10px ;
 }
 #case-indicator {
     spacing:    0;
@@ -131,7 +131,7 @@
     text-color: @normal-foreground;
 }
 #inputbar {
-    children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+    children:   [ entry,case-indicator ];
 }
 #textbox-prompt-colon {
     expand:     false;
