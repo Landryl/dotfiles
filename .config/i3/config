@@ -42,7 +42,8 @@ floating_modifier $mod
 
 # start a terminal
 # bindsym $mod+Return exec urxvt -bg black -e tmux
-bindsym $mod+Return exec urxvt -bg black
+# bindsym $mod+Return exec urxvt -bg black
+bindsym $mod+Return exec ~/.config/config-themes/urxvthook.sh
 
 # kill focused window
 bindsym $mod+Shift+q kill

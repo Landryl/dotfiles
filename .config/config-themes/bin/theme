@@ -1,10 +1,28 @@
 #!/bin/bash
+# Script responsible of the theme switching procedure
+
 if [ -d "$HOME/.config/config-themes/$1/" ]; then
   echo "CONFIGTHEME=$1" > $HOME/.config/config-themes/config
-  source $HOME/.config/config-themes/shellhook.sh
+  source $HOME/.config/config-themes/config
+
+  # Moving all necessary files
+  cp $HOME/.config/config-themes/$1/rofitheme.rasi $HOME/.config/config-themes/
+  cp $HOME/.config/config-themes/$1/conky.conf $HOME/.config/config-themes/
+
+  # Loading Xresources
+  xrdb $HOME/.config/config-themes/$1/Xresources
+
+  # Sending signal to Urxvt to update its colors through the newly loaded Xresources
+  for pid in `ps -C urxvt | tail --lines=+2 | grep -Po ^\ \*\[0-9\]+`; do
+    kill -s HUP $pid
+  done
+
+  # Sending signal to i3 to restart (applying new conky configuration & new wallpaper)
   i3-msg restart
-  return 0
+  
+  exit 0
+
 else
   echo "Error: unknown theme $1"
-  return 1
+  exit 1
 fi

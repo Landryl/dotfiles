@@ -1,10 +1,57 @@
 ! URXVT
 URxvt.scrollBar: false
 urxvt*transparent: true
-urxvt*shading: 55
+urxvt*shading: 35
  URxvt.font: xft:DejaVu Sans Mono for Powerline:size=10:antialias=true,xft:FontAwesome
 !URxvt.font: xft:Droid Sans Mono Slashed for Powerline:size=10
 URxvt.letterSpace: 0
 URxvt.visualBell: false
 URxvt.urgentOnBell: true
 URxvt.internalBorder:  0
+URxvt.perl-ext-common: config-reload
+
+! Base 00 to Base 07
+*.color0:       #0f0f12
+*.color18:      #19191f
+*.color19:      #24242b
+*.color8:       #322f40
+*.color20:      #3c394d
+*.color7:       #bbbbbe
+*.color21:      #bbbbbe
+*.color15:      #fef8ea
+
+! Base 08 - Red
+*.color1:       #e3564d
+*.color9:       #e3564d
+
+! Base 09 - Orange
+*.color16:      #dd8756
+
+! Base 0A - Yellow
+*.color3:       #fecf63
+*.color11:      #fecf63
+
+! Base 0B - Green
+*.color2:       #b2d889
+*.color10:      #b2d889
+
+! Base 0C - Cyan
+*.color6:       #75759c
+*.color14:      #75759c
+
+! Base 0D - Blue
+*.color4:       #f1796b
+*.color12:      #f1796b
+
+! Base 0E - Magenta
+*.color5:       #b294bb
+*.color13:      #b294bb
+
+! Base 0F - Brown
+*.color17:      #5e5e5e
+
+! Base 00
+*.background:   #0f0f12
+! Base 05
+*.foreground:   #bbbbbe
+*.cursorColor:  #bbbbbe

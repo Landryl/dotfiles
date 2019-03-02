@@ -8,3 +8,4 @@ URxvt.letterSpace: 0
 URxvt.visualBell: false
 URxvt.urgentOnBell: true
 URxvt.internalBorder:  0
+URxvt.perl-ext-common: config-reload

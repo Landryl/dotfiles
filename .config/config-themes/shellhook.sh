@@ -1,15 +1,5 @@
 #!/bin/bash
+# This script is called on the start of a shell, usefull to update colors if not terminals where open
+# during the switch
 source $HOME/.config/config-themes/config
 source $HOME/.config/config-themes/$CONFIGTHEME/shellcolors.sh
-
-function theme() {
-  if [ -d "$HOME/.config/config-themes/$1/" ]; then
-    echo "CONFIGTHEME=$1" > ~/.config/config-themes/config
-    source $HOME/.config/config-themes/shellhook.sh
-    i3-msg restart
-    return 0
-  else
-    echo "Error: unknown theme $1"
-    return 1
-  fi
-}
