@@ -10,15 +10,15 @@
     
     normal-foreground:           @foreground;
     urgent-foreground:           rgba ( 255, 24, 68, 100 % );
-    active-foreground:           rgba ( 128, 203, 196, 100 % );
+    active-foreground:           rgba ( 255, 204, 99, 100 % );
     
     alternate-normal-foreground: @foreground;
     alternate-urgent-foreground: @urgent-foreground;
     alternate-active-foreground: @active-foreground;
     
     selected-normal-foreground:  rgba ( 235, 121, 111, 100 % );
-    selected-urgent-foreground:  rgba ( 255, 24, 68, 100 % );
-    selected-active-foreground:  rgba ( 128, 203, 196, 100 % );
+    selected-urgent-foreground:  @selected-normal-foreground;
+    selected-active-foreground:  @selected-normal-foreground;
     
     background:                  rgba ( 25, 28, 37, 100 % );
 
