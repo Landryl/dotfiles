@@ -8,7 +8,7 @@ URxvt.letterSpace: 0
 URxvt.visualBell: false
 URxvt.urgentOnBell: true
 URxvt.internalBorder:  0
-URxvt.perl-ext-common: config-reload
+URxvt.perl-ext-common: config-reload,digital-clock
 
 ! Base 00 to Base 07
 *.color0:       #101010
