@@ -48,6 +48,7 @@ RESOURCE:
         my $val = $resource{$_};
         $cmd .= "\033]$key;$val\007";
     }
+    # Inspired by https://github.com/Roliga/urxvt-xresources-256
     # warn "CMD: " . ($cmd =~ s/\e/\\e/gr =~ s/\a/\\a/gr);
     for (@terms) {
         $_->cmd_parse($cmd);

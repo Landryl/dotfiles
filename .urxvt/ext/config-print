@@ -11,7 +11,7 @@ our @resources = (
           font geometry
           transparent shading
       ),
-      map { "color$_" } 0..15
+      map { "color$_" } 0..255
     );
 
 sub on_start {
