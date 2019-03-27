@@ -1,0 +1,3 @@
+export GTK_THEME="Adapta:dark"
+export GTK2_RC_FILES=/usr/share/themes/Adapta-Nokto/gtk-2.0/gtkrc
+export MOZ_USE_XINPUT2=1 
