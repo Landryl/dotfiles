@@ -8,6 +8,7 @@ if [ -d "$HOME/.config/config-themes/$1/" ]; then
   # Moving all necessary files
   cp $HOME/.config/config-themes/$1/rofitheme.rasi $HOME/.config/config-themes/
   cp $HOME/.config/config-themes/$1/conky.conf $HOME/.config/config-themes/
+  cp $HOME/.config/config-themes/$1/zathurarc $HOME/.config/config-themes/
 
   # Loading Xresources
   xrdb $HOME/.config/config-themes/$1/Xresources
