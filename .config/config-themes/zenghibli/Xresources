@@ -1,0 +1,55 @@
+! URXVT
+URxvt.scrollBar: false
+ URxvt.font: xft:Ubuntu Mono derivative Powerline:size=14:antialias=true,xft:FontAwesome
+!URxvt.font: xft:Droid Sans Mono Slashed for Powerline:size=10
+URxvt.letterSpace: 0
+URxvt.visualBell: false
+URxvt.urgentOnBell: true
+URxvt.internalBorder:  0
+URxvt.perl-ext-common: config-reload
+
+! Base 00 to Base 07
+*.color0:       #000116
+*.color18:      #0d1321
+*.color19:      #01071e
+*.color8:       #074843
+*.color20:      #0f353b
+*.color7:       #c3eab2
+*.color21:      #50905b
+*.color15:      #fefdde
+
+! Base 08 - Red
+*.color1:       #1a7361
+*.color9:       #1a7361
+
+! Base 09 - Orange
+*.color16:      #25a280
+
+! Base 0A - Yellow
+*.color3:       #fefdd5
+*.color11:      #fefdd5
+
+! Base 0B - Green
+*.color2:       #60bc8d
+*.color10:      #60bc8d
+
+! Base 0C - Cyan
+*.color6:       #c3eab3
+*.color14:      #c3eab3
+
+! Base 0D - Blue
+*.color4:       #60bc8d
+*.color12:      #60bc8d
+
+! Base 0E - Magenta
+*.color5:       #0f594e
+*.color13:      #0f594e
+
+! Base 0F - Brown
+*.color17:      #25a280
+
+! Base 00
+*.background:   #000116
+! Base 05
+*.foreground:   #fefdde
+*.cursorColor:  #fefdde
