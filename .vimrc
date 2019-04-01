@@ -138,6 +138,7 @@ set expandtab
 call plug#begin('~/.vim/plugged')
   Plug 'chriskempson/base16-vim'
   Plug 'lervag/vimtex'
+  Plug 'justinmk/vim-syntax-extra'
   let g:tex_flavor='latex'
   let g:vimtex_view_method='zathura'
   let g:vimtex_quickfix_mode=0
