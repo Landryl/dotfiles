@@ -68,3 +68,22 @@ if [[ $1 == "list" ]]; then
     eval $grepcommand
   fi
 fi
+
+#Deleting tag
+if [[ $1 == "untag" ]]; then
+  if [[ -z "$2" ]]; then
+    echo "Error: Missing parameter name." && exit 1
+  else
+    if [[ -d "$HOME/workspaces/$2" ]]; then
+      i=3
+      while [ "$i" -le "$#" ]; do
+        eval "tag=\${$i}"
+        sed -i -e "/^$2 /s/\#$tag //" $HOME/workspaces/tags
+        i=$((i+1))
+      done
+      echo "Tags removed."
+    else
+      echo "Workspace $2 not found" && exit 1
+    fi
+  fi
+fi
