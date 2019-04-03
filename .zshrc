@@ -114,10 +114,13 @@ alias yt-mp3="youtube-dl --extract-audio --audio-format mp3"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias l='ls -lah'
 alias ll='ls -lh --group-directories-first'
+alias rmr='rm -r'
+
 alias ws='workspaces'
 cdw() {
   cd $HOME/workspaces/$1
 }
+
 
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 
