@@ -152,3 +152,6 @@ colorscheme base16-default-dark
 "--- Relative line number
 :set number relativenumber
 :set nu rnu
+
+:au BufWinEnter * let w:m2=matchadd('Search', '\%>80v.\+', -1)
+
