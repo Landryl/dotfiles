@@ -16,10 +16,16 @@ my $libdir = dirname(__FILE__);
 our @terms = ();
 
 sub reload_all {
-    my @lines = `urxvt --perl-lib $libdir -pe config-print 2>&1`;
+    # Ideally, the following line should work. Yet it doesn't, urxvt has a weird
+    # behavior when redirection stderr, idk.
+    ## my @lines = `urxvt --perl-lib $libdir -pe config-print 2>&1`;
+    my @lines = `xrdb -query`;
     my %resource;
     for (@lines) {
-        $resource{$1} = $2 if (/(.*?): (.*)/);
+        $resource{$3} = $4 if (/((URxvt\.)|\*)(.*?):\s*(.*)/);
+        # Yes, it means that wildcard priority won't be correctly interpreted
+        # This is a hopefully a temporary hack until I figure out why urxvt 2>&1
+        # doesn't work anymore.
     }
     my $cmd = "";
     my $i = 0;
@@ -36,7 +42,7 @@ RESOURCE:
             $key = 14 when "mouse_background";
             $key = 17 when "highlight";
             $key = 708 when "border";
-            $key = 710 when "font";
+            #$key = 710 when "font";
             when ("geometry") {
                 if (my ($col, $row) = $resource{$_} =~ /(\d+)x(\d+)/) {
                     $cmd .= "\e[8;${row};${col}t";
